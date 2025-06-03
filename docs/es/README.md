@@ -1892,6 +1892,7 @@ El formateo tiene los siguientes efectos:
 en los caracteres que representan.
 - Los datos XML y XHTML se indentan.
 
+
 Ten en cuenta que a veces los formateadores pueden realizar cambios en el cuerpo real de la respuesta (por ejemplo,
 colapsar etiquetas vacías en XML), pero el resultado final siempre será semánticamente indistinguible. Algunos de
 estos cambios de formato pueden configurarse de manera más granular mediante las [opciones de formato](#format-options).

@@ -566,7 +566,7 @@ $ http PUT pie.dev/put \
     X-Date:today \                     # Encabezado
     token==secret \                    # Parámetro en la URL
     name=John \                        # Campo de datos
-    age:=29                            # JSON sin procesar  
+    age:=29                            # JSON sin procesar
 ```
 
 |                                                    Tipo de elemento | Descripción                                                                                                                                                                                                            |
@@ -693,7 +693,7 @@ Host: pie.dev
 }
 ```
 
-La sintaxis `:=`/`:=@` es específica para JSON. Puedes cambiar tu solicitud a `--form` o `--multipart`, 
+La sintaxis `:=`/`:=@` es específica para JSON. Puedes cambiar tu solicitud a `--form` o `--multipart`,
 y los valores de tipo cadena, número o flotante se seguirán serializando (como valores de formulario).
 Sin embargo, otros tipos JSON no están permitidos con `--form` o `--multipart`.
 
@@ -999,7 +999,7 @@ Puedes seguir la instrucción dada (agregar un `]`) y corregir tu expresión.
 ##### Seguridad de tipos
 
 Cada ruta contenedora (por ejemplo, `x[y][z]` in `x[y][z][1]`) tiene un tipo determinado que se define con
-el primer uso y no se puede cambiar después de eso. Si intentas hacer un acceso por clave a un arreglo, o 
+el primer uso y no se puede cambiar después de eso. Si intentas hacer un acceso por clave a un arreglo, o
 un acceso por índice a un objeto, HTTPie mostrará un error:
 
 ```bash
@@ -1199,12 +1199,12 @@ Para enviar un encabezado con un valor vacío, usa `Header;`, con un punto y com
 $ http pie.dev/headers 'Header;'
 ```
 
-Ten en cuenta que algunos encabezados internos, como `Content-Length`, no pueden eliminarse si 
+Ten en cuenta que algunos encabezados internos, como `Content-Length`, no pueden eliminarse si
 son añadidos automáticamente por el cliente.
 
 ### Múltiples valores de encabezado con el mismo nombre
 
-Si la solicitud se envía con múltiples encabezados con el mismo nombre, 
+Si la solicitud se envía con múltiples encabezados con el mismo nombre,
 HTTPie los enviará de forma individual:
 
 ```bash
@@ -1269,7 +1269,7 @@ $ nc pie.dev 80 < request.http
 
 También puedes usar `--offline` para depuración, exploración de HTTP y HTTPie, y para “simulacros”.
 
-`--offline` tiene el efecto secundario de activar automáticamente `--print=HB`, es decir, se imprimen tanto los encabezados como el cuerpo de la solicitud. Puedes personalizar la salida con las [opciones de salida](#output-options), con la excepción de que 
+`--offline` tiene el efecto secundario de activar automáticamente `--print=HB`, es decir, se imprimen tanto los encabezados como el cuerpo de la solicitud. Puedes personalizar la salida con las [opciones de salida](#output-options), con la excepción de que
 no hay respuesta que imprimir. Puedes usar `--offline` junto con todas las demás opciones (por ejemplo `--session`).
 
 ## Cookies
@@ -1309,7 +1309,7 @@ Host: pie.dev
 User-Agent: HTTPie/0.9.9
 ```
 
-Si a menudo trabajas con cookies en tus solicitudes, entonces apreciarás 
+Si a menudo trabajas con cookies en tus solicitudes, entonces apreciarás
 la función de [sesiones](#sessions).
 
 ## Autenticación
@@ -1404,7 +1404,7 @@ Consulta [plugin manager](#plugin-manager) para más detalles.
 
 ## Redirecciones HTTP
 
-Por defecto, las redirecciones HTTP no se siguen y solo se muestra 
+Por defecto, las redirecciones HTTP no se siguen y solo se muestra
 la primera respuesta:
 
 ```bash

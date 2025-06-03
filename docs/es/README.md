@@ -893,6 +893,8 @@ $ http --offline --print=B pie.dev/post \
     3
 ]
 ```
+
+
 También puedes aplicar anidamiento a los elementos haciendo referencia a su índice:
 
 ```bash
@@ -1642,7 +1644,9 @@ Server: gunicorn/0.13.4
 {
     […]
 }
+
 ```
+
 #### Salida extra verbosa
 
 Si ejecutas HTTPie con `-vv` o `--verbose --verbose`, también mostrará la [metainformación de la respuesta](#response-meta).
@@ -1879,6 +1883,7 @@ HTTPie revisa el `Content-Type` para seleccionar el resaltador de sintaxis y el 
 ```bash
 $ http --response-mime=text/yaml pie.dev/get
 ```
+
 
 El formateo tiene los siguientes efectos:
 
